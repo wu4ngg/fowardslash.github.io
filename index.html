@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"></head>
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/calc.css">
+    <link rel="icon" type="image/x-icon" href="/src/img/Frame 65.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@100,700;150.3,400&display=swap" rel="stylesheet">
+
+<body>
+    <div class="header_section">
+        <div class="header_main" id="header" style="background-color: black">
+            <div class="logo header_item">
+                <img src="/src/img/Union.svg">
+            </div>
+            
+            <div class="auth header_item">
+                
+                <div class="entries header_item">
+                    <div class="entry">
+                        <p>Trang chủ</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="entries header_item">
+                    <div class="entry">
+                        <p>Công cụ</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="entries header_item">
+                    <div class="entry">
+                        <p>Blog</p>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="entries header_item visible" onclick="Show(document.getElementById('links'))">
+                <i class="material-icons md64">expand_more</i>
+            </div>
+        </div>
+    </div>
+    <div class="body_main">
+        <div class="headline_wrapper">
+            <div class="ad">
+                <h1>Welcome to my Page.</h1>
+                <p id="XD"></p>
+                <div></div>
+            </div>
+            
+        </div>
+        <div class="main" id="main">
+            <h1 class="main_title">Mình là ai?</h1>
+            <div class="feature_wrapper">
+                <div class="feature">
+                    <div class="feat_txt">
+                        <h1>Tên mình là Quang!</h1>
+                        <p>Mình chỉ là một sinh viên ở một cái trường cũng không mấy nổi tiếng, đó là trường HUFLIT. Nhưng mình có một đam mê với nghành lập trình và sẽ sẵn sàn học hỏi và gắn bó với nó.</p>
+                    </div>
+                    <div class="feat_img">
+                        <img src="/src/img/292969915_1379789589197759_7865337255687014489_n (1).jpg">
+                    </div>
+                </div>
+            </div>
+            <h1 class="main_title">Các dự án của mình</h1>
+            <div class="feature_wrapper">
+                <div class="feature">
+                    <div class="feat_txt">
+                        <h1>SpaceCourse</h1>
+                        <p>Một trang Web quản lý khóa học Online. Lúc đầu rất là flop nhưng bây giờ đang được viết lại. Cả câu truyện sẽ được đăng lên Blog.</p>
+                    </div>
+                    <div class="feat_img small">
+                        <img src="/src/img/Light_logo.png" class="small">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="main_title">Website này có gì??</h1>
+            <div class="feature_wrapper">
+                <div class="feature">
+                    <div class="feat_txt">
+                        <h1>Nó chỉ là một cái portfolio.</h1>
+                        <p>Để mình giới thiệu bản thân với đăng Blog thôi, không có gì nhiều.</p>
+                    </div>
+                    <div class="feat_txt">
+                        <h1>Cũng có vài công cụ.</h1>
+                        <p>Như là tính điểm nè, uhhhhhhhhhhh... Hết rồi.</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="main_title">Thế thôi nhé! Chào tạm biệt 🐧.</h1>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="branding">
+            <img src="/src/img/Frame 4 (5).svg">
+            <h2>Chỉ là một cái portfolio.</h2>
+            <p>Mã nguồn mở. Xem mã nguồn trên GitHub</p>
+            <div class="social_links">
+            </div>
+        </div>
+        <div class="links">
+            <h2>Mình còn có các dự án khác. Xem không?</h2>
+            <a href="#">SpaceCourse</a>
+        </div>
+        <div class="links">
+            <h2>Mạng xã hội</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+    <div class="profile_wrap" id="links">
+        <div class="entry_profile">
+            <p>Trang chủ</p>
+        </div>
+        <div class="entry_profile">
+            <p>Công cụ</p>
+        </div>
+        <div class="entry_profile">
+            <p>Blog</p>
+        </div>
+        <div class="entry_profile" onclick="Hide(document.getElementById('links'))">
+            <p>Đóng</p>
+        </div>
+    </div>
+</body>
+<script src="/src/script/main.js"></script>
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>

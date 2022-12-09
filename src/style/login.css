@@ -1,0 +1,109 @@
+@keyframes slide_right{
+    from{
+        transform: translate3d(25%,0,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+}
+@keyframes slide_down_deep{
+    from{
+        transform: translate3d(0,-25%,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+}
+.sidebar{
+    animation: slide_right .5s cubic-bezier(0,.11,0,1.01);
+    padding: 50px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 55%;
+    height: 100vh;
+    border-left: 10px solid;
+    border-bottom: 10px solid;
+    border-top: 10px solid;
+    border-image: linear-gradient(117.34deg, #F0DB4F 10.76%, #8CAAEE 34.27%, #E44D26 69.99%) 20;
+    top: 100px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.sidebar h1{
+    margin: 0;
+    font-size: 75px;
+}
+.sidebar h2{
+    margin: 0;
+}
+.sidebar li{
+    font-size: 20px;
+}
+.uneccesary_restriction{
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+.lst_acc{
+    animation: slide_right 1s cubic-bezier(0,.11,0,1.01);
+    height: auto;
+}
+.sidebar_header{
+    animation: slide_right 1s cubic-bezier(0,.11,0,1.01);
+}
+.chuthich{
+    position: relative;
+    top: 100%;
+}
+.login_main{
+    animation: slide_down_deep .5s cubic-bezier(0,.11,0,1.01);
+    margin-top: auto 15vh;
+    width: 55%;
+    height: auto;
+    border: 5px black solid;
+    box-shadow: 14px 14px 4px 0px #00000040;
+}
+.top{
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 5px black solid;
+}
+.top img{
+    width: 200px;
+}
+.top h1{
+    margin: 0;
+}
+.login_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 100vh;
+}
+.bottom{
+    animation: slide_down_deep 1s cubic-bezier(0,.11,0,1.01);
+    box-sizing: border-box;
+    padding: 25px;
+}
+.bottom input{
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 20px;
+    border: 5px black solid;
+    width: 100%;
+    box-shadow: 4px 4px 4px 0px #00000040;
+}
+.submit_btn{
+    margin-top: 45px;
+    background-color: white;
+    border: 5px solid !important;
+    border-image: linear-gradient(117.34deg, #F0DB4F 10.76%, #8CAAEE 34.27%, #E44D26 69.99%) 20 !important;
+    font-weight: bold;
+}

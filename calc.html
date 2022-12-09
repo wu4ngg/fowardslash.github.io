@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHHHH!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"></head>
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/calc.css">
+    <link rel="stylesheet" href="./src/style/register.css">
+    <link rel="icon" type="image/x-icon" href="/src/img/Frame 65.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@100,700;150.3,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header_section">
+        <div class="header_main" id="header" style="background-color: black">
+            <div class="logo header_item">
+                <img src="/src/img/Union.svg">
+            </div>
+            <div class="auth header_item">
+
+                <div class="entries header_item">
+                    <div class="entry">
+                        <p>Trang chủ</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="entries header_item">
+                    <div class="entry">
+                        <p>Công cụ</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="entries header_item">
+                    <div class="entry">
+                        <p>Blog</p>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_login">
+        <div class="sidebar">
+            <div class="sidebar_header">
+                <h1>Hmmm... Sợ tạch môn à?</h1>
+                <h2>Đừng lo đã có công cụ tính điểm môn học. Chỉ cần nhập điểm và trọng số, hệ thống sẽ tính điểm cho bạn.</h2>
+            </div>
+            <div class="lst_acc">
+                <h2>Công cụ này sẽ làm gì??</h2>
+                <ul>
+                    <li>Tính điểm</li>
+                    <li>Tính điểm</li>
+                    <li>Tính điểm</li>
+                    <li>Tính điểm</li>
+                </ul>
+                <div class="chuthich">
+                    <p class="uneccesary_restriction">Đừng dùng công cụ này để làm nguồn cơn cho sự lo âu của bạn nhé!</p>
+                </div>
+            </div>
+        </div>
+        <div class="login_wrapper">
+            <div class="login_main">
+                <div class="top">
+                    <h1>Tính điểm trung bình</h1>
+                    <input type="Button" value="Thêm mode" class="submit_btn">
+                </div>
+                <div class="bottom">
+                    <div id="dcc">
+                        <div class="password_fields">
+                            <div class="psswrd_field">
+                                <h2>Điểm QT 1</h2>                            
+                                <input type="text" onchange="getQT(this)" id="0" class="0">
+                            </div>
+                            <div class="psswrd_field">
+                                <h2>Trọng số (%)</h2>                            
+                                <input type="text" onchange="getTS(this)" id="0" class="0">
+                            </div>                    
+                        </div>
+                    </div>
+                    <input type="button" value="Thêm điểm QT" class="submit_btn" onclick="addQT()">
+                    <div class="password_fields">
+                        <div class="psswrd_field">
+                            <h2>Điểm Cuối Kỳ</h2>                            
+                            <input type="text" onchange="getCK(this)" class="ck">
+                        </div>
+                        <div class="psswrd_field">
+                            <h2>Trọng số (%)</h2>                            
+                            <input type="text" onchange="getTSCK(this)" class="ck">
+                        </div>                    
+                    </div>
+                    <input type="button" value="Tính" class="submit_btn" onclick="GetResult()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="result_dialog" id="res_d">
+        <div class="result_main">
+            <h1>Kết quả</h1>
+            <p>Xin chúc mừng! Điểm của bạn là</p>
+            <h1 class="score" id="score">0</h1>
+            <p id="status">Và bạn đã RỚT!</p>
+            <input type="button" value="OK" class="submit_btn" onclick="Hide(document.getElementById('res_d'))">
+        </div>
+        <div></div>
+    </div>
+    <div class="result_dialog" id="res_err">
+        <div class="result_main">
+            <h1>LỖI!</h1>
+            <p id="errmsg">Lỗi ko xác định</p>
+            <input type="button" value="OK" class="submit_btn" onclick="Hide(document.getElementById('res_err'))">
+        </div>
+        <div></div>
+    </div>
+    <script src="/src/script/qs.js"></script>
+    <script src="/src/script/main.js"></script>
+</body>
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
