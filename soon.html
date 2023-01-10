@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/coming.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth@150&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="header_wrapper">
+        <div class="header">
+            <div class="logo_section" id="logo">
+                <h1 class="xs_header ihatecss">//.quangSite</h1>
+                <h1 class="xs_header" id="mode_switcher" onclick="SwitchMode(this)">light mode</h1>
+            </div>
+            <div class="entries">
+                <div class="entry head" onclick="window.location.href='/'">
+                    <b><h1 class="xs_header bold_text">trang chủ</h1></b>
+                    <hr class="entry_inactive">
+                </div>
+                <div class="entry head" onclick="window.location.href='./soon.html'">
+                    <b><h1 class="xs_header bold_text">blog</h1></b>
+                    <hr class="entry_inactive">
+                </div>
+                <div class="entry head">
+                    <b><h1 class="xs_header bold_text" onclick="window.location.href='./soon.html'">linh tinh</h1></b>
+                    <hr class="entry_inactive">
+                </div>
+                <div class="entry mobile" id="menu_entry" onclick="Show(document.getElementById('menu'))">
+                    <b><h1 class="xs_header bold_text">menu</h1></b>
+                    <hr class="entry_active">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_menu" id="menu">
+        <h1 class="lg_header menu_header">Menu</h1>
+        <div class="entries on_menu" id="entries">
+            <div class="entry head mobile_only">
+                <b><h1 class="xs_header bold_text" onclick="window.location.href='/'">trang chủ</h1></b>
+                <hr class="entry_inactive">
+            </div>
+            <div class="entry head mobile_only" onclick="window.location.href='./soon.html'">
+                <b><h1 class="xs_header bold_text">blog</h1></b>
+                <hr class="entry_inactive">
+            </div>
+            <div class="entry head mobile_only" onclick="window.location.href='./soon.html'">
+                <b><h1 class="xs_header bold_text">linh tinh</h1></b>
+                <hr class="entry_inactive">
+            </div>
+        </div>
+    </div>
+    <div class="large_txt_thingy">
+        <h1 class="xl_header indc">soon.™</h1>
+    </div>
+    <div class="body">
+        <div class="sadface">
+            <h1 class="xl_header">:/</h1>
+            <div class="soon">
+                <h1 class="lg_header">hmm ngại quá...</h1>
+                <p>Trang web này đang được tạo (WIP) và sẽ sẵn sàng sớm thôi™</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/src/script/main.js"></script>
+</body>
+</html>

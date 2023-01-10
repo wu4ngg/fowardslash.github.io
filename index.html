@@ -5,135 +5,207 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"></head>
-    <link rel="stylesheet" href="./src/style/style.css">
-    <link rel="stylesheet" href="./src/style/calc.css">
-    <link rel="icon" type="image/x-icon" href="/src/img/Frame 65.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@100,700;150.3,400&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth@150&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
 <body>
-    <div class="header_section">
-        <div class="header_main" id="header" style="background-color: black">
-            <div class="logo header_item">
-                <img src="/src/img/Union.svg">
+    <div class="header_wrapper">
+        <div class="header">
+            <div class="logo_section" id="logo">
+                <h1 class="xs_header ihatecss">//.quangSite</h1>
+                <h1 class="xs_header" id="mode_switcher" onclick="SwitchMode(this)">light mode</h1>
             </div>
-            
-            <div class="auth header_item">
-                
-                <div class="entries header_item">
-                    <div class="entry">
-                        <p>Trang chủ</p>
-                    </div>
-                    <div></div>
+            <div class="entries">
+                <div class="entry head">
+                    <b><h1 class="xs_header bold_text">trang chủ</h1></b>
+                    <hr class="entry_active">
                 </div>
-                <div class="entries header_item">
-                    <div class="entry">
-                        <p>Công cụ</p>
-                    </div>
-                    <div></div>
+                <div class="entry head" onclick="window.location.href='./soon.html'">
+                    <b><h1 class="xs_header bold_text">blog</h1></b>
+                    <hr class="entry_inactive">
                 </div>
-                <div class="entries header_item">
-                    <div class="entry">
-                        <p>Blog</p>
-                    </div>
-                    <div></div>
+                <div class="entry head">
+                    <b><h1 class="xs_header bold_text" onclick="window.location.href='./soon.html'">linh tinh</h1></b>
+                    <hr class="entry_inactive">
                 </div>
-            </div>
-            <div class="entries header_item visible" onclick="Show(document.getElementById('links'))">
-                <i class="material-icons md64">expand_more</i>
+                <div class="entry mobile" id="menu_entry" onclick="Show(document.getElementById('menu'))">
+                    <b><h1 class="xs_header bold_text">menu</h1></b>
+                    <hr class="entry_active">
+                </div>
             </div>
         </div>
     </div>
-    <div class="body_main">
-        <div class="headline_wrapper">
-            <div class="ad">
-                <h1>Welcome to my Page.</h1>
-                <p id="XD"></p>
-                <div></div>
+    <div class="mobile_menu" id="menu">
+        <h1 class="lg_header menu_header">Menu</h1>
+        <div class="entries on_menu" id="entries">
+            <div class="entry head mobile_only">
+                <b><h1 class="xs_header bold_text">trang chủ</h1></b>
+                <hr class="entry_active">
             </div>
-            
+            <div class="entry head mobile_only">
+                <b><h1 class="xs_header bold_text" onclick="window.location.href='./soon.html'">blog</h1></b>
+                <hr class="entry_inactive">
+            </div>
+            <div class="entry head mobile_only">
+                <b><h1 class="xs_header bold_text" onclick="window.location.href='./soon.html'">linh tinh</h1></b>
+                <hr class="entry_inactive">
+            </div>
         </div>
-        <div class="main" id="main">
-            <h1 class="main_title">Mình là ai?</h1>
-            <div class="feature_wrapper">
-                <div class="feature">
-                    <div class="feat_txt">
-                        <h1>Tên mình là Quang!</h1>
-                        <p>Mình chỉ là một sinh viên ở một cái trường cũng không mấy nổi tiếng, đó là trường HUFLIT. Nhưng mình có một đam mê với nghành lập trình và sẽ sẵn sàn học hỏi và gắn bó với nó.</p>
+    </div>
+    <div class="large_txt_thingy">
+        <h1 class="xl_header indc">home.</h1>
+    </div>
+    <div class="body">
+        
+        <div class="sidebar">
+            <div class="top_wrapper">
+                <div class="info">
+                    <div class="top">
+                        <h1 class="lg_header no_bold ihatecss">//.quangSite</h1>
+                        <h1 class="xs_header">hosting on github pages because i'm too poor to afford proper hosting and a domain.</h1>
                     </div>
-                    <div class="feat_img">
-                        <img src="/src/img/292969915_1379789589197759_7865337255687014489_n (1).jpg">
+                    <div class="bot">
+                        <div class="social_info">
+                            <h1 class="small_header no_bold">/.. xã hội</h1>
+                            <div class="social_wrap">
+                                <h1 class="xs_header">facebook</h1>
+                                <h1 class="xs_header">github</h1>
+                                <h1 class="xs_header">twitter</h1>
+                                <h1 class="xs_header"></h1>
+                            </div>
+                        </div>
+                        <div class="social_info">
+                            <h1 class="small_header no_bold">/.. email</h1>
+                            <div class="social_wrap">
+                                <h1 class="xs_header">quangrain2014<br>@gmail.com</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <h1 class="main_title">Các dự án của mình</h1>
-            <div class="feature_wrapper">
-                <div class="feature">
-                    <div class="feat_txt">
-                        <h1>SpaceCourse</h1>
-                        <p>Một trang Web quản lý khóa học Online. Lúc đầu rất là flop nhưng bây giờ đang được viết lại. Cả câu truyện sẽ được đăng lên Blog.</p>
+            <div class="bot_wrapper">
+                <h1 class="right_text transparent_text">Tech enthusiast</h1>
+                <h1 class="right_text transparent_text">Software Engineering fan</h1>
+                <h1 class="right_text transparent_text">OpenSUSE Enjoyer</h1>
+                <h1 class="lg_header right_text transparent_text">turning 20 (2003)</h1>
+                <h1 class="larger_header right_text transparent_text">fowardslash</h1>
+                <h1 class="xl_header right_text">tri quang</h1>
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="lg_header">Sinh viên năm 2</h1>
+            <p>Đại học Ngoại ngữ Tin học Thành phố Hồ Chí Minh (HUFLIT)</p>
+            <h1 class="lg_header">Sì kiu</h1>
+            <ul>
+                <li>Ngoại ngữ (IELTS 6.5 OVERALL)</li>
+                <li>Học hỏi nhanh</li>
+                <li>Một xíu li núc</li>
+                <li>Cx biết kha khá về Web</li>
+                <li>Một tí về backend</li>
+                <li>Javascript cơ bản (xạo đấy, nguu JS lắm)</li>
+                <li>C# trung bình</li>
+            </ul>
+            <h1 class="lg_header">Một số dự án</h1>
+            <div class="project_picker">
+                <div class="entries except">
+                    <div class="entry down" id="sc" onclick="Switch(this.id, 'down')">
+                        <b><h1 class="xs_header bold_text">SpaceCourse</h1></b>
+                        <hr class="entry_active">
                     </div>
-                    <div class="feat_img small">
-                        <img src="/src/img/Light_logo.png" class="small">
-                        <div></div>
+                    <div class="entry down" id="qs" onclick="Switch(this.id, 'down')">
+                        <b><h1 class="xs_header bold_text">quangSite</h1></b>
+                        <hr class="entry_inactive">
+                    </div>
+                    <div class="entry down" id="qb" onclick="Switch(this.id, 'down')">
+                        <b><h1 class="xs_header bold_text">quangBot</h1></b>
+                        <hr class="entry_inactive">
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="projects">
+                <div class="project" id="spacecourse">
+                    <div class="project_img_wrapper">
+                        <img src="./src/img/SpaceCourse_Banner (1).svg">
+                    </div>
+                    <div class="brief_intro">
+                        Bắt đầu với một đồ án đại học, SpaceCourse đã ra đời với mục đích là mang kiến thức lập trình đến mọi người.
+                        <br>
+                        Tuy đồ án chỉ được 7.5 điểm do sự cẩu thả của Team nhưng chúng tôi vẫn đam mê cải thiện dự án không ngừng, hiện dự án này chỉ là một dự án “làm cho vui” nên cũng không có ý định vận hành trang Web này.
+                    </div>
+                    <div class="brief_intro">
+                        Đọc thêm về dev log của SpaceCourse ở blog (coming soon khi tui nghĩ ra cách connect mySQL vào web này 🙂)
+                    </div>
+                </div>
+                <div class="project" id="quangSite">
+                    <div class="project_img_wrapper">
+                        <img src="./src/img/quangSite_Banner.svg">
+                    </div>
+                    <div class="brief_intro">
+                        Là cái trang này :)), như cái tên, trang này là porfolio về tui
+                        <br>
+                        Cũng có nhiều phiên bản trong quá khứ về cái trang này nhưng mất source rồi. Cái source duy nhất tui tìm được là cái design cũ tui làm trước khi nghĩ ra cái design này (nó phèn lắm)
+                    </div>
+                    <div class="brief_intro">
+                        <h1>Nó đây 🐧</h1>
+                        <br>
+                        <img src="./src/img/Web capture_10-1-2023_152146_127.0.0.1.jpeg">
+                    </div>
+                    <div class="brief_intro">
+                        Lười viết dev log quá (nhưng sẽ có). TUI HỨA
+                    </div>
+                    <br>
+                </div>
+                <div class="project" id="quangbot">
+                    <div class="project_img_wrapper">
+                        <img src="./src/img/noLogo.svg">
+                    </div>
+                    <div class="brief_intro">
+                        Con bot chiến vc tui làm cho Discord. Cũng có tính năng ban, kick và một số khác như tính điểm thi thptqg :>> với lại uhhh mấy tính năng copy của uhhh mấy con bot khác. Hồi đó chưa có máy mạnh nên code trên con Core i3 lỏ chạy Windows 8.
+                    </div>
+                    <div class="brief_intro">
+                        Mất source rồi nên ko biết làm blog về nó ntn. Cũng có dự định làm lại em nó nhưng ko biết chừng nào.
                     </div>
                 </div>
             </div>
-            <h1 class="main_title">Website này có gì??</h1>
-            <div class="feature_wrapper">
-                <div class="feature">
-                    <div class="feat_txt">
-                        <h1>Nó chỉ là một cái portfolio.</h1>
-                        <p>Để mình giới thiệu bản thân với đăng Blog thôi, không có gì nhiều.</p>
+            <h1 class="lg_header">To-do list</h1>
+            <ul>
+                <li>Hoàn thành cái Web của gia đình</li>
+                <li>Blog</li>
+                <li>Mấy cái tool</li>
+                <li>SpaceCourse</li>
+            </ul>
+            <h1 class="lg_header">Không có cho coi mặt đâu 🐧</h1>
+            <div class="info mobile_only">
+                <div class="top">
+                    <h1 class="lg_header no_bold">//.quangSite</h1>
+                    <h1 class="xs_header">hosting on github pages because i'm too poor to afford proper hosting and a domain.</h1>
+                </div>
+                <div class="bot">
+                    <div class="social_info">
+                        <h1 class="small_header no_bold">/.. xã hội</h1>
+                        <div class="social_wrap">
+                            <h1 class="xs_header">facebook</h1>
+                            <h1 class="xs_header">github</h1>
+                            <h1 class="xs_header">twitter</h1>
+                            <h1 class="xs_header"></h1>
+                        </div>
                     </div>
-                    <div class="feat_txt">
-                        <h1>Cũng có vài công cụ.</h1>
-                        <p>Như là tính điểm nè, uhhhhhhhhhhh... Hết rồi.</p>
+                    <div class="social_info">
+                        <h1 class="small_header no_bold">/.. email</h1>
+                        <div class="social_wrap">
+                            <h1 class="xs_header">quangrain2014<br>@gmail.com</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-            <h1 class="main_title">Thế thôi nhé! Chào tạm biệt 🐧.</h1>
         </div>
     </div>
-    <div class="footer">
-        <div class="branding">
-            <img src="/src/img/Frame 4 (5).svg">
-            <h2>Chỉ là một cái portfolio.</h2>
-            <p>Mã nguồn mở. Xem mã nguồn trên GitHub</p>
-            <div class="social_links">
-            </div>
-        </div>
-        <div class="links">
-            <h2>Mình còn có các dự án khác. Xem không?</h2>
-            <a href="#">SpaceCourse</a>
-        </div>
-        <div class="links">
-            <h2>Mạng xã hội</h2>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </div>
-    <div class="profile_wrap" id="links">
-        <div class="entry_profile">
-            <p>Trang chủ</p>
-        </div>
-        <div class="entry_profile">
-            <p>Công cụ</p>
-        </div>
-        <div class="entry_profile">
-            <p>Blog</p>
-        </div>
-        <div class="entry_profile" onclick="Hide(document.getElementById('links'))">
-            <p>Đóng</p>
-        </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/src/script/main.js"></script>
 </body>
-<script src="/src/script/main.js"></script>
 </html>
-<script
-  src="https://code.jquery.com/jquery-3.6.1.min.js"
-  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-  crossorigin="anonymous"></script>

@@ -1,0 +1,16 @@
+.body{
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.sadface{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.soon{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
