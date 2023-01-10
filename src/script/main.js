@@ -1,4 +1,5 @@
 var tetmode = false;
+var fuckgithub;
 var clicked = true;
 var timeout;
 window.addEventListener('click', (e) => {
