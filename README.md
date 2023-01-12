@@ -22,6 +22,11 @@ Trang Web để giới thiệu về tui đến mọi người.
 - Chế độ Tết (WIP)
 - ![image](https://user-images.githubusercontent.com/68984861/212024092-835f2958-dd4c-4f18-80bb-d02fc61031cf.png)
 - Thêm 2 dự án
+## Ver 1.0.1
+- Xóa bớt mấy thứ linh tinh
+- Thêm tình trạng dự án
+- Thêm Favicon
+- Thay đổi xíu ở giao diện mobile
 # To-do list
 1. Trang blog
 2. Trang linh tinh
