@@ -10,7 +10,7 @@ Trang Web để giới thiệu về tui đến mọi người.
 ## Ver 1.0
 - Làm lại ngoại hình đầy mới mẻ:
 - Layout chia đôi
-- ![image](https://user-images.githubusercontent.com/68984861/212022059-3befa2da-7fea-443f-9d0c-ce30d12ec8e0.png)
+- ![Web capture_12-1-2023_15590_fowardslash github io](https://user-images.githubusercontent.com/68984861/212022898-02809115-9a1e-4a57-b399-1c39e1e61ef6.jpeg)
 - Thiết kế glyph
 - ![image](https://user-images.githubusercontent.com/68984861/212022143-2e24090e-6c26-4ae2-9e7b-f8fd5eb859da.png)
 - Font chữ mới
