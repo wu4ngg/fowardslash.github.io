@@ -18,7 +18,7 @@ Trang Web để giới thiệu về tui đến mọi người.
 - Logo mới
 - ![quangSite_Banner](https://user-images.githubusercontent.com/68984861/212022332-2b1ca197-c7d5-474e-b376-05da8c105223.svg)
 - Nút light-dark mode (WIP)
-- ![image](https://user-images.githubusercontent.com/68984861/212023493-7b944450-5bf3-4af3-b67f-e6b14f3db6a1.png)
+- ![ezgif-4-a340b030c0](https://user-images.githubusercontent.com/68984861/212024249-fde2180a-d0b8-471f-9f59-97f687d72bea.gif)
 - Chế độ Tết (WIP)
 - ![image](https://user-images.githubusercontent.com/68984861/212024092-835f2958-dd4c-4f18-80bb-d02fc61031cf.png)
 - Thêm 2 dự án
