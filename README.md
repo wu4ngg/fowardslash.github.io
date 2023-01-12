@@ -17,6 +17,10 @@ Trang Web để giới thiệu về tui đến mọi người.
 - ![image](https://user-images.githubusercontent.com/68984861/212022227-ddc7a5b5-3318-42ee-acb8-b46250f90a8e.png)
 - Logo mới
 - ![quangSite_Banner](https://user-images.githubusercontent.com/68984861/212022332-2b1ca197-c7d5-474e-b376-05da8c105223.svg)
+- Nút light-dark mode (WIP)
+- ![image](https://user-images.githubusercontent.com/68984861/212023493-7b944450-5bf3-4af3-b67f-e6b14f3db6a1.png)
+- Chế độ Tết (WIP)
+- ![image](https://user-images.githubusercontent.com/68984861/212024092-835f2958-dd4c-4f18-80bb-d02fc61031cf.png)
 - Thêm 2 dự án
 # To-do list
 1. Trang blog
