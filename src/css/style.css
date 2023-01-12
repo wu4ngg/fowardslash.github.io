@@ -47,6 +47,19 @@ h1{
     font-family: 'Inconsolata';
     color: var(--txt);
 }
+button{
+    cursor: pointer;
+    padding: .5rem;
+    background: none;
+    border: 5px var(--txt) solid;
+}
+button:hover{
+    color: var(--bg);
+    cursor: pointer;
+    padding: .5rem;
+    background-color: var(--txt);
+    border: 5px var(--txt) solid;
+}
 /* txt style */
 .ihatecss{
     word-wrap:break-word;
@@ -142,6 +155,9 @@ h1{
     border-right: 10px var(--txt) solid;
 }
 .content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px !important;
     width: 75%;
     height: 100%;
     padding-right: 25px;
@@ -235,6 +251,11 @@ li{
 .brief_intro img{
     width: 100%;
 }
+.project_img_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .project_img_wrapper img{
     height: 10%;
 }
@@ -299,8 +320,15 @@ li{
     }
     .except{
         padding-bottom: 10px;
-        display: flex;
+        display: grid;
+        grid-template-columns: 15% 15%;
+        row-gap: 5px;
         overflow-x: scroll;
+    }
+    .except .entry h1{
+        font-family: 'Roboto' !important;
+        font-weight: bold;
+        font-size: 16px;
     }
     .project_img_wrapper img{
         width: 100%;

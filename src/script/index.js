@@ -31,7 +31,7 @@ function Hide(el){
       el.style.display = "none";
     }, 200)
 }
-function Switch(el, cl){
+function Switch(el, cl, content){
     var sel = $(`.${cl}`).children();
     var e = $(`#${el}`).children();
     for(i = 1; i < sel.length; i+=2){
@@ -40,10 +40,10 @@ function Switch(el, cl){
     }
     e.eq(1).removeClass("entry_inactive");
     e.eq(1).addClass("entry_active")
-    SwitchTo(el);
+    SwitchTo(el, content);
 }
-function SwitchTo(el){
-    var proj = $(".project");
+function SwitchTo(el, content){
+    var proj = $(`.${content}`);
     console.log(proj.length)
     proj.css("display", "none")
     switch(el){

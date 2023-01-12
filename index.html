@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <title>quangSite - Trang chủ</title>
+    <link rel="icon" type="image/x-icon" href="/src/img/favicon (3).png">    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth@150&display=swap" rel="stylesheet">
@@ -98,29 +98,19 @@
         </div>
         <div class="content">
             <h1 class="lg_header">Sinh viên năm 2</h1>
-            <p>Đại học Ngoại ngữ Tin học Thành phố Hồ Chí Minh (HUFLIT)</p>
-            <h1 class="lg_header">Sì kiu</h1>
-            <ul>
-                <li>Ngoại ngữ (IELTS 6.5 OVERALL)</li>
-                <li>Học hỏi nhanh</li>
-                <li>Một xíu li núc</li>
-                <li>Cx biết kha khá về Web</li>
-                <li>Một tí về backend</li>
-                <li>Javascript cơ bản (xạo đấy, nguu JS lắm)</li>
-                <li>C# trung bình</li>
-            </ul>
+            <p>Khoa Công nghệ thông tin - Đại học Ngoại ngữ Tin học Thành phố Hồ Chí Minh (HUFLIT)</p>
             <h1 class="lg_header">Một số dự án</h1>
             <div class="project_picker">
                 <div class="entries except">
-                    <div class="entry down" id="sc" onclick="Switch(this.id, 'down')">
+                    <div class="entry down" id="sc" onclick="Switch(this.id, 'down', 'project')">
                         <b><h1 class="xs_header bold_text">SpaceCourse</h1></b>
                         <hr class="entry_active">
                     </div>
-                    <div class="entry down" id="qs" onclick="Switch(this.id, 'down')">
+                    <div class="entry down" id="qs" onclick="Switch(this.id, 'down', 'project')">
                         <b><h1 class="xs_header bold_text">quangSite</h1></b>
                         <hr class="entry_inactive">
                     </div>
-                    <div class="entry down" id="qb" onclick="Switch(this.id, 'down')">
+                    <div class="entry down" id="qb" onclick="Switch(this.id, 'down', 'project')">
                         <b><h1 class="xs_header bold_text">quangBot</h1></b>
                         <hr class="entry_inactive">
                     </div>
@@ -132,18 +122,29 @@
                     <div class="project_img_wrapper">
                         <img src="./src/img/SpaceCourse_Banner (1).svg">
                     </div>
+                    <div class="state">
+                        <h1>Loại project: đồ án Web</h1>
+                        <h1>Tình trạng: Discontinued</h1>
+                        <h1>Source: <a style="font-family: 'Inconsolata' !important;" href="https://github.com/fowardslash/SpaceCourse_MVC">Github</a></h1>
+                    </div>
                     <div class="brief_intro">
                         Bắt đầu với một đồ án đại học, SpaceCourse đã ra đời với mục đích là mang kiến thức lập trình đến mọi người.
                         <br>
                         Tuy đồ án chỉ được 7.5 điểm do sự cẩu thả của Team nhưng chúng tôi vẫn đam mê cải thiện dự án không ngừng, hiện dự án này chỉ là một dự án “làm cho vui” nên cũng không có ý định vận hành trang Web này.
                     </div>
                     <div class="brief_intro">
-                        Đọc thêm về dev log của SpaceCourse ở blog (coming soon khi tui nghĩ ra cách connect mySQL vào web này 🙂)
+                        Đọc thêm về dev log của SpaceCourse ở blog (mới biết là phải học thêm php nên tui sẽ làm bằng MVC và hosting cái web blog)
                     </div>
                 </div>
                 <div class="project" id="quangSite">
                     <div class="project_img_wrapper">
                         <img src="./src/img/quangSite_Banner.svg">
+                    </div>
+                    <div class="state">
+                        <h1>Loại project: Website Tĩnh</h1>
+                        <h1>Tình trạng: Đang hoạt động</h1>
+                        <h1>Source: <a style="font-family: 'Inconsolata' !important;" href="https://github.com/fowardslash/fowardslash.github.io">Github</a></h1>
+                        
                     </div>
                     <div class="brief_intro">
                         Là cái trang này :)), như cái tên, trang này là porfolio về tui
@@ -164,6 +165,11 @@
                     <div class="project_img_wrapper">
                         <img src="./src/img/noLogo.svg">
                     </div>
+                    <div class="state">
+                        <h1>Loại project: Làm cho vui</h1>
+                        <h1>Tình trạng: Discontinued</h1>
+                        <h1>Source: <a style="font-family: 'Inconsolata' !important;" href="">Bị mất</a></h1>
+                    </div>
                     <div class="brief_intro">
                         Con bot chiến vc tui làm cho Discord. Cũng có tính năng ban, kick và một số khác như tính điểm thi thptqg :>> với lại uhhh mấy tính năng copy của uhhh mấy con bot khác. Hồi đó chưa có máy mạnh nên code trên con Core i3 lỏ chạy Windows 8.
                     </div>
@@ -172,14 +178,6 @@
                     </div>
                 </div>
             </div>
-            <h1 class="lg_header">To-do list</h1>
-            <ul>
-                <li>Hoàn thành cái Web của gia đình</li>
-                <li>Blog</li>
-                <li>Mấy cái tool</li>
-                <li>SpaceCourse</li>
-            </ul>
-            <h1 class="lg_header">Không có cho coi mặt đâu 🐧</h1>
             <div class="info mobile_only">
                 <div class="top">
                     <h1 class="lg_header no_bold">//.quangSite</h1>
