@@ -27,6 +27,10 @@ Trang Web để giới thiệu về tui đến mọi người.
 - Thêm tình trạng dự án
 - Thêm Favicon
 - Thay đổi xíu ở giao diện mobile
+## Ver 1.1
+- Page linh tinh
+- ![image](https://user-images.githubusercontent.com/68984861/215038793-e1c3d652-f086-4972-b491-b2224dc33027.png)
+- Chức năng chưa hoạt động (bận lắm ko làm kịp) chỉ có cái random text :)
 # To-do list
 1. Trang blog
 2. Trang linh tinh
