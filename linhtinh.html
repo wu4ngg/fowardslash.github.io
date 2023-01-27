@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quangSite - Linh tinh</title>
+    <link rel="icon" type="image/x-icon" href="/src/img/favicon (3).png">    
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/ltinh.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth@150&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="header_wrapper">
+        <div class="header">
+            <div class="logo_section" id="logo">
+                <h1 class="xs_header ihatecss">//.quangSite</h1>
+                <h1 class="xs_header" id="mode_switcher" onclick="SwitchMode(this)">light mode</h1>
+            </div>
+            <div class="entries">
+                <div class="entry head">
+                    <b><h1 class="xs_header bold_text" onclick="window.location.href='/'">trang chủ</h1></b>
+                    <hr class="entry_inactive">
+                </div>
+                <div class="entry head" onclick="window.location.href='./soon.html'">
+                    <b><h1 class="xs_header bold_text">blog</h1></b>
+                    <hr class="entry_inactive">
+                </div>
+                <div class="entry head">
+                    <b><h1 class="xs_header bold_text" onclick="window.location.href='./linhtinh.html'">linh tinh</h1></b>
+                    <hr class="entry_active">
+                </div>
+                <div class="entry mobile" id="menu_entry" onclick="Show(document.getElementById('menu'))">
+                    <b><h1 class="xs_header bold_text">menu</h1></b>
+                    <hr class="entry_active">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_menu" id="menu">
+        <h1 class="lg_header menu_header">Menu</h1>
+        <div class="entries on_menu" id="entries">
+            <div class="entry head mobile_only">
+                <b><h1 class="xs_header bold_text" onclick="window.location.href='/'">trang chủ</h1></b>
+                <hr class="entry_inactive">
+            </div>
+            <div class="entry head mobile_only">
+                <b><h1 class="xs_header bold_text" onclick="window.location.href='./soon.html'">blog</h1></b>
+                <hr class="entry_inactive">
+            </div>
+            <div class="entry head mobile_only">
+                <b><h1 class="xs_header bold_text" onclick="window.location.href='./soon.html'">linh tinh</h1></b>
+                <hr class="entry_active">
+            </div>
+        </div>
+    </div>
+    <div class="large_txt_thingy">
+        <h1 class="xl_header indc">bored at home.</h1>
+    </div>
+    <div class="body">
+        
+        <div class="sidebar">
+            <div class="top_wrapper">
+                <div class="info">
+                    <div class="top">
+                        <h1 class="lg_header no_bold ihatecss">//.quangSite</h1>
+                        <h1 class="xs_header">hosting on github pages because i'm too poor to afford proper hosting and a domain.</h1>
+                    </div>
+                    <div class="bot">
+                        <div class="social_info">
+                            <h1 class="small_header no_bold">/.. xã hội</h1>
+                            <div class="social_wrap">
+                                <h1 class="xs_header">facebook</h1>
+                                <h1 class="xs_header">github</h1>
+                                <h1 class="xs_header">twitter</h1>
+                                <h1 class="xs_header"></h1>
+                            </div>
+                        </div>
+                        <div class="social_info">
+                            <h1 class="small_header no_bold">/.. email</h1>
+                            <div class="social_wrap">
+                                <h1 class="xs_header">quangrain2014<br>@gmail.com</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bot_wrapper">
+                <h1 class="right_text transparent_text">linh tinh</h1>
+                <h1 class="lg_header right_text transparent_text">linh tinh</h1>
+                <h1 class="larger_header right_text transparent_text">linh tinh</h1>
+                <h1 class="xl_header right_text">LINH TINH</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="rnd_wrapper">
+                <h1 class="lg_header" id="rndtxt">
+                    Hey what's this text?
+                </h1>
+                <div class="btn" onclick="getRndTxt()">Change text</div>
+            </div>
+            <hr class="seperate">
+
+            <h1 class="lg_header">
+                🐧
+            </h1>
+            <div class="content_entries">
+                <a class="content_entry" href="soon.html">
+                    <h1 class="lg_header">To-do list</h1>
+                    <p>Just a simple to-do list</p>
+                </a>
+                <a class="content_entry" href="soon.html">
+                    <h1 class="lg_header">Calculator</h1>
+                    <p>JS calculator 💀💀</p>
+                </a>
+                <a class="content_entry" href="soon.html">
+                    <h1 class="lg_header">Tính điểm đại học</h1>
+                    <p>Tạch or nah?</p>
+                </a>
+                <a class="content_entry" href="soon.html">
+                    <h1 class="lg_header">Web UI Preview</h1>
+                    <p>Cuz why not?</p>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/src/script/index.js"></script>
+
+</body>
+</html>

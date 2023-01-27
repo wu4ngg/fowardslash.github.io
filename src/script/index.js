@@ -1,7 +1,27 @@
+var rndsg = [
+  "Hello there",
+  "φ = 1.61803398875",
+  "bird is the word",
+  "This is a DEBUG msg",
+  "vnpt be like: 💩",
+  "****",
+  `"at least its portable" mfs after i burnt their laptop (it became more portable)`,
+  "iphones are not bad, it's just the fans",
+  "imagine spending 2mil vnd+ on a skin (cannot be me)",
+  "i desperately need a new phone (2703 0893 890 tpbank btw)",
+  `<img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Trollface_non-free.png/220px-Trollface_non-free.png">
+  <a href="https://www.youtube.com/watch?v=-DdkOB0htO0">hey, what's this</a>
+  `,
+  `Hello fella <p>${navigator.userAgent}</p> user`
+];
 var tetmode = false;
 var fuckgithub;
 var clicked = true;
 var timeout;
+function getRndTxt(){
+  var rndN = Math.floor(Math.random() * rndsg.length) + 0;
+  $('#rndtxt').html(rndsg[rndN])
+}
 window.addEventListener('click', (e) => {
     if(!document.getElementById('entries').contains(e.target) && !document.getElementById('menu_entry').contains(e.target)){
       Hide(document.getElementById('menu'))
