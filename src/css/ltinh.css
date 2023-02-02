@@ -4,6 +4,8 @@
     gap: 15px;
 }
 .content_entry{
+    cursor: pointer;
+    user-select: none;
     word-wrap: break-word;
     transition: transform .2s, box-shadow .2s;
     text-decoration: none;
@@ -41,12 +43,189 @@
     width: 50%;
     word-wrap: normal;
 }
+.linhtinh_popup-wrapper{
+    display: none;
+    transition: opacity 0.5s;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.fantom_el{
+    width: 50%;
+    height: 100vh;
+}
+.linhtinh_wrapper{
+    animation: blur 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: inherit;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    background-color: var(--bg_transparent);
+    backdrop-filter: blur(2px);
+}
+.linhtinh_popup{
+    animation: appear-top 1s cubic-bezier(0,.11,0,1.01);
+    transition: transform 1s cubic-bezier(0,.11,0,1.01);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 75%;
+    height: 55%;
+    background-color: var(--bg);
+    border: 5px var(--txt) solid;
+    padding: 25px;
+    overflow-y: scroll;
+}
+#popup{
+    z-index: 4;
+}
+.title_wrapp{
+    display: flex;
+    justify-content: space-between;
+}
+.small{
+    padding: 5px 10px !important;
+    margin-bottom: auto;
+}
+.idgaf-right{
+    width: auto;
+    margin: 0 auto 0 0;
+}
+.linhtinh_content{
+    height: 100%;
+}
+.content_box{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 15px;
+    height: 100%;
+}
+.btn_wrapper{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.content_main{
+    padding: 15px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: 5px var(--txt) solid;
+}
+.brief_intro{
+    display: flex;
+    justify-content: space-between;
+}
+#dialog{
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+}
+.inp{
+    transition: box-shadow 0.2s;
+    width: 100%;
+    background-color: transparent;
+    border: 5px var(--txt) solid;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+.inp:focus{
+    box-shadow: 5px 5px rgba(179, 179, 179, 0.527);
+}
+.thicc{
+    box-sizing: border-box;
+    width: 100%;
+}
+/* checkbox */
+.chxbox{
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.chxbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.chx{
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 3px var(--txt) solid;
+}
+.chxbox:hover input ~ .chx{
+    transform: translate(0, -5px);
+    box-shadow: 5px 5px rgba(179, 179, 179, 0.527);
+}
+.chxbox input:checked ~ .chx{
+    transform: translate(0, -0px);
+    background-color: transparent;
+    box-shadow: 5px 5px rgba(179, 179, 179, 0.527);
+
+}
+.chx:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.chxbox input:checked ~ .chx:after{
+    display: block;
+}
+.chxbox .chx:after{
+    left: 7px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.brief_intro{
+    align-items: center;
+}
+#content_todo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.center{
+    display: flex;
+    align-items: center;
+}
+.thin_border{
+    border-width: 3px;
+    padding: 1px !important;
+}
+.no_border{
+    border:none;
+    padding: 0px !important;
+}
 @media only screen and (max-width: 600px){
     .content_entries{
         display: grid;
         grid-template-columns: 100%;
         gap: 15px;
-    }    
+    }
     .rnd_wrapper{
         flex-direction: column-reverse;
     }
@@ -55,9 +234,36 @@
         width: 100%;
         box-sizing: border-box;
     }
+    .auto_width{
+        width: auto;
+    }
     .rnd_wrapper h1{
         font-size: 35px;
         width: 100%;
         word-wrap: normal;
+    }
+    .linhtinh_popup-wrapper{
+        top: 0;
+        height: 100%;
+    }
+    .linhtinh_wrapper{
+        align-items: flex-end;
+    }
+    .linhtinh_popup{
+        height: 75%;
+        animation: move-up-deep .5s cubic-bezier(0,.11,0,1.01);
+        border: none;
+        border-top: 5px var(--txt) solid;
+        width: 100%;
+    }
+    .title_wrapp{
+        width: 100%;
+    }
+    .linhtinh_popup h1{
+        word-wrap: break-word;
+    }
+    #dialog{
+        width: 100%;
+ 
     }
 }

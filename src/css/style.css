@@ -15,10 +15,36 @@
         transform: translate3d(0, 0, 0);
     }
 }
-
+@keyframes move-up{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0, -150px);
+    }
+}
+@keyframes move-up-deep{
+    from{
+        transform: translate(0, 50vh);
+    }
+    to{
+        transform: translate(0, 0px);
+    }
+}
+@keyframes blur{
+    from{
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+    }
+    to{
+        background-color: var(--bg_transparent);
+        backdrop-filter: blur(2px);
+    }
+}
 /* var */
 :root{
     --bg: #373737;
+    --bg_transparent: #373737e7;
     --txt: white;
     --transparent: rgba(255, 255, 255, 0.24);
     --less_transparent: rgba(255, 255, 255, 0.514);

@@ -1,17 +1,18 @@
 var rndsg = [
   "Hello there",
   "φ = 1.61803398875",
-  "bird is the word",
+  "i'm da biggest bird",
   "This is a DEBUG msg",
   "vnpt be like: 💩",
   "****",
   `"at least its portable" mfs after i burnt their laptop (it became more portable)`,
-  "iphones are not bad, it's just the fans",
+  "m",
   "imagine spending 2mil vnd+ on a skin (cannot be me)",
   "i desperately need a new phone (2703 0893 890 tpbank btw)",
   `<img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Trollface_non-free.png/220px-Trollface_non-free.png">
   <a href="https://www.youtube.com/watch?v=-DdkOB0htO0">hey, what's this</a>
   `,
+  "ko dùng bootstrap.",
   `Hello fella <p>${navigator.userAgent}</p> user`
 ];
 var tetmode = false;

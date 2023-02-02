@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth@150&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 <body>
     <div class="header_wrapper">
         <div class="header">
@@ -31,7 +32,7 @@
                 <div class="entry head">
                     <b><h1 class="xs_header bold_text" onclick="window.location.href='./linhtinh.html'">linh tinh</h1></b>
                     <hr class="entry_active">
-                </div>
+                </div>  
                 <div class="entry mobile" id="menu_entry" onclick="Show(document.getElementById('menu'))">
                     <b><h1 class="xs_header bold_text">menu</h1></b>
                     <hr class="entry_active">
@@ -97,38 +98,100 @@
         <div class="content">
             <div class="rnd_wrapper">
                 <h1 class="lg_header" id="rndtxt">
-                    Hey what's this text?
+                    Chạy trang này trên màn Full HD (100% scaling) hoặc màn điện thoại để có trải nghiệm tốt nhất :>
                 </h1>
-                <div class="btn" onclick="getRndTxt()">Change text</div>
+                <div class="btn" onclick="getRndTxt()">Chuyển</div>
             </div>
             <hr class="seperate">
 
             <h1 class="lg_header">
-                🐧
+                Mấy cái linh tinh tui làm khi rảnh háng 🐧
             </h1>
             <div class="content_entries">
-                <a class="content_entry" href="soon.html">
+                <a class="content_entry" id="0" onclick="DetermineFunc(this.id, 'ltp')">
                     <h1 class="lg_header">To-do list</h1>
                     <p>Just a simple to-do list</p>
                 </a>
-                <a class="content_entry" href="soon.html">
+                <a class="content_entry" id="1" onclick="DetermineFunc(this.id, 'ltp')">
                     <h1 class="lg_header">Calculator</h1>
                     <p>JS calculator 💀💀</p>
                 </a>
-                <a class="content_entry" href="soon.html">
+                <a class="content_entry" id="2" onclick="DetermineFunc(this.id, 'ltp')">
                     <h1 class="lg_header">Tính điểm đại học</h1>
                     <p>Tạch or nah?</p>
                 </a>
-                <a class="content_entry" href="soon.html">
+                <a class="content_entry" id="3" onclick="DetermineFunc(this.id, 'ltp')">
                     <h1 class="lg_header">Web UI Preview</h1>
                     <p>Cuz why not?</p>
                 </a>
             </div>
-            
+        </div>
+        <div class="linhtinh_popup-wrapper" id="popup">
+            <div class="linhtinh_wrapper">
+                <div class="linhtinh_popup" id="dialog">
+                    <div class="title_wrapp">
+                        <div class="title_txt">
+                            <h1 class="lg_header">Thêm task</h1>
+                        </div>
+                        <div class="btn small auto_width" onclick="HidePopup('popup', 'ltp')">
+                            <b><h1 class="xs_header bold_text">đóng</h1></b>
+                        </div>
+                    </div>
+                    <div class="linhtinhh_content">
+                        <div class="content_box">
+                            <input class="inp" placeholder="tên task" id="task-in">
+                            <div class="btn small thicc mid_text" onclick="AddTask('content_todo', 'task-in', 'popup')">Thêm</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="linhtinh_popup-wrapper" id="the_popup">
+            <div class="linhtinh_wrapper">
+                <div class="linhtinh_popup" id="ltp">
+                    <div class="title_wrapp">
+                        <div class="title_txt">
+                            <h1 class="lg_header">To-do list</h1>
+                            <p class="lg_p">Just a simple to-do list</p>
+                        </div>
+                        <div class="btn small auto_width" onclick="Hide(document.getElementById('the_popup'))">
+                            <b><h1 class="xs_header bold_text">đóng</h1></b>
+                        </div>
+                    </div>
+                    <hr class="seperate">
+                    <div class="linhtinh_content">
+                        <div class="content_box">
+                            <p id="todo_count">Có 1 công việc cần hoàn thành</p>
+                            <div class="btn_wrapper">
+                                <div class="btn small idgaf-right auto_width" onclick="ShowPopup('popup', 'ltp', 'block')">Thêm</div>
+                                <div class="btn small idgaf-right auto_width" onclick="Clear('content_todo')">Quét sạch</div>
+                            </div>
+                            <div class="content_main" id="content_todo">
+                                <div class="brief_intro">
+                                    Tên class là brief_intro nhưng nó ko liên quan j đến cái to-do này :))
+                                    <div class="btn_wrapper">
+                                        <div>
+                                            <label class="chxbox">
+                                                <input class="tbox" type="checkbox" onclick="RefreshJobCount('content_todo', 'todo_count')">
+                                                <span class="chx"></span>
+                                            </label>
+
+                                        </div>
+                                        <div class="btn small idgaf-right center thin_border" onclick="Remove($(this).parent())">
+                                            <i class="ri-close-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="/src/script/index.js"></script>
+    <script src="/src/script/linhtinh_code.js"></script>
 
 </body>
 </html>
