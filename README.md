@@ -36,6 +36,8 @@ Trang Web để giới thiệu về tui đến mọi người.
 - ![image](https://user-images.githubusercontent.com/68984861/216246861-8b77797c-3815-44d2-9587-997603590618.png)
 - ![image](https://user-images.githubusercontent.com/68984861/216246949-6ad69ee2-0d62-47ae-a920-eb082205a378.png)
 - Tối ưu vài thứ...
+## Ver 1.3
+- Chức năng máy tính (chưa responsive)
 # To-do list
 1. Trang blog
 2. Trang linh tinh
