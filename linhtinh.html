@@ -114,7 +114,7 @@
                 </a>
                 <a class="content_entry" id="1" onclick="DetermineFunc(this.id, 'ltp')">
                     <h1 class="lg_header">Calculator</h1>
-                    <p>JS calculator 💀💀</p>
+                    <p>I got inspiration from GeeksforGeeks 💀💀</p>
                 </a>
                 <a class="content_entry" id="2" onclick="DetermineFunc(this.id, 'ltp')">
                     <h1 class="lg_header">Tính điểm đại học</h1>
@@ -148,11 +148,11 @@
         </div>
         <div class="linhtinh_popup-wrapper" id="the_popup">
             <div class="linhtinh_wrapper">
-                <div class="linhtinh_popup" id="ltp">
+                <div class="linhtinh_popup calculator" id="ltp">
                     <div class="title_wrapp">
                         <div class="title_txt">
-                            <h1 class="lg_header">To-do list</h1>
-                            <p class="lg_p">Just a simple to-do list</p>
+                            <h1 class="lg_header">Máy tính</h1>
+                            <p class="lg_p">Infix to Postix</p>
                         </div>
                         <div class="btn small auto_width" onclick="Hide(document.getElementById('the_popup'))">
                             <b><h1 class="xs_header bold_text">đóng</h1></b>
@@ -161,25 +161,71 @@
                     <hr class="seperate">
                     <div class="linhtinh_content">
                         <div class="content_box">
-                            <p id="todo_count">Có 1 công việc cần hoàn thành</p>
-                            <div class="btn_wrapper">
-                                <div class="btn small idgaf-right auto_width" onclick="ShowPopup('popup', 'ltp', 'block')">Thêm</div>
-                                <div class="btn small idgaf-right auto_width" onclick="Clear('content_todo')">Quét sạch</div>
-                            </div>
-                            <div class="content_main" id="content_todo">
-                                <div class="brief_intro">
-                                    Tên class là brief_intro nhưng nó ko liên quan j đến cái to-do này :))
-                                    <div class="btn_wrapper">
-                                        <div>
-                                            <label class="chxbox">
-                                                <input class="tbox" type="checkbox" onclick="RefreshJobCount('content_todo', 'todo_count')">
-                                                <span class="chx"></span>
-                                            </label>
-
-                                        </div>
-                                        <div class="btn small idgaf-right center thin_border" onclick="Remove($(this).parent())">
-                                            <i class="ri-close-line"></i>
-                                        </div>
+                            <div class="calculator_wrapper">
+                                <div class="calc_left">
+                                    <p id="top_display">Vui lòng nhập số</p>
+                                    <h1 class="xl_header right_text" id="display">0</h1>
+                                </div>
+                                <div class="calc_right">
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">1</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">2</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">3</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">+</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">4</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">5</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">6</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">-</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">7</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">8</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">9</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">*</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">(</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">0</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">)</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="getButtonVal($(this).children().eq(0).children().eq(0), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">/</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="Del($('#display'))">
+                                        <b><h1 class="xs_header bold_text"><</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="Clear($('#display'))">
+                                        <b><h1 class="xs_header bold_text">C</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="$('#display').html('Coming soon to a calculator near you!')">
+                                        <b><h1 class="xs_header bold_text">M</h1></b>
+                                    </div>
+                                    <div class="btn square grid_item" onclick="InftoPosf($('#display').html(), $('#display'))">
+                                        <b><h1 class="xs_header bold_text">=</h1></b>
                                     </div>
                                 </div>
                             </div>
