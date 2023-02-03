@@ -31,6 +31,11 @@ Trang Web để giới thiệu về tui đến mọi người.
 - Page linh tinh
 - ![image](https://user-images.githubusercontent.com/68984861/215038793-e1c3d652-f086-4972-b491-b2224dc33027.png)
 - Chức năng chưa hoạt động (bận lắm ko làm kịp) chỉ có cái random text :)
+## Ver 1.2
+- Chức năng to-do list
+- ![image](https://user-images.githubusercontent.com/68984861/216246861-8b77797c-3815-44d2-9587-997603590618.png)
+- ![image](https://user-images.githubusercontent.com/68984861/216246949-6ad69ee2-0d62-47ae-a920-eb082205a378.png)
+- Tối ưu vài thứ...
 # To-do list
 1. Trang blog
 2. Trang linh tinh
