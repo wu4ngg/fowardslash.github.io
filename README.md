@@ -37,7 +37,10 @@ Trang Web để giới thiệu về tui đến mọi người.
 - ![image](https://user-images.githubusercontent.com/68984861/216246949-6ad69ee2-0d62-47ae-a920-eb082205a378.png)
 - Tối ưu vài thứ...
 ## Ver 1.3
-- Chức năng máy tính (chưa responsive)
+- Chức năng máy tính
+- ![image](https://user-images.githubusercontent.com/68984861/216517031-6b9ed100-1c5f-4fbb-8b99-24f29dd48430.png)
+- ![image](https://user-images.githubusercontent.com/68984861/216517066-eed58963-fd13-4e80-b110-12a44212e352.png)
+- Một vài bug đã đc phát sinh 🙂
 # To-do list
 1. Trang blog
 2. Trang linh tinh
