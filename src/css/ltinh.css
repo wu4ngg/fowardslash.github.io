@@ -256,6 +256,9 @@
     height: auto;
     max-height: 75%;
 }
+#display{
+    width: 100%;
+}
 @media only screen and (max-width: 600px){
     .content_entries{
         display: grid;
@@ -286,11 +289,13 @@
         align-items: flex-end;
     }
     .linhtinh_popup{
-        height: 75%;
         animation: move-up-deep .5s cubic-bezier(0,.11,0,1.01);
         border: none;
         border-top: 5px var(--txt) solid;
         width: 100%;
+    }
+    .calculator{
+        max-height: 100%;
     }
     .title_wrapp{
         width: 100%;
@@ -301,5 +306,19 @@
     #dialog{
         width: 100%;
  
+    }
+    .calculator_wrapper{
+        flex-direction: column;
+    }
+    .calc_left, .calc_right{
+        padding: 0;
+    }
+    .calc_right{
+        width: 100%;
+        gap: 10px;
+    }
+    .calc_left{
+        border: 0;
+        width: 100%;
     }
 }
