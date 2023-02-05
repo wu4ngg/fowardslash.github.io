@@ -1,6 +1,6 @@
 ![quangSite_Banner](https://user-images.githubusercontent.com/68984861/212021281-318a0a44-f46d-4f51-b871-85175c3ce504.svg)
 # quangSite
-Trang Web để giới thiệu về tui đến mọi người.
+Hobby project that is a mess
 # Changelog
 ## Ver 0.1
 - Tạo Web lần đầu
