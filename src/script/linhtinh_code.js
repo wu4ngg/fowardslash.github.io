@@ -186,7 +186,9 @@ function getResult(s, display){
         }
         var tmp = stack.pop()
         if(!tmp){
-            tmp = "Sai cú pháp"
+            tmp = "Sai cú pháp rồi!"
+        } else if(tmp == "Infinity" || tmp == "-Infinity"){
+            tmp = "Ê sao lại chia cho 0?"
         }
         display.html(tmp)
     }

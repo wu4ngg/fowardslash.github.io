@@ -271,7 +271,7 @@ li{
     flex-direction: column;
     gap: 10px;
 }
-#quangSite, #quangbot{
+#quangSite, #quangbot, #highlyb, #socialife{
     display: none;
 }
 .brief_intro img{

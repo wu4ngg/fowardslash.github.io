@@ -67,7 +67,7 @@
                 <div class="info">
                     <div class="top">
                         <h1 class="lg_header no_bold ihatecss">//.quangSite</h1>
-                        <h1 class="xs_header">hosting on github pages because i'm too poor to afford proper hosting and a domain.</h1>
+                        <h1 class="xs_header">i might move to react fr</h1>
                     </div>
                     <div class="bot">
                         <div class="social_info">
@@ -115,13 +115,21 @@
                         <b><h1 class="xs_header bold_text">quangBot</h1></b>
                         <hr class="entry_inactive">
                     </div>
+                    <div class="entry down" id="hb" onclick="Switch(this.id, 'down', 'project')">
+                        <b><h1 class="xs_header bold_text">highlyBORDERED</h1></b>
+                        <hr class="entry_inactive">
+                    </div>
+                    <div class="entry down" id="sl" onclick="Switch(this.id, 'down', 'project')">
+                        <b><h1 class="xs_header bold_text">SociaLife</h1></b>
+                        <hr class="entry_inactive">
+                    </div>
                 </div>
                     
             </div>
             <div class="projects">
                 <div class="project" id="spacecourse">
                     <div class="project_img_wrapper">
-                        <img src="./src/img/SpaceCourse_Banner (1).svg">
+                        <img src="./src/img/SpaceCourse_Banner (1).svg" class="darkmodeinvert">
                     </div>
                     <div class="state">
                         <h1>Loại project: đồ án Web</h1>
@@ -131,7 +139,7 @@
                     <div class="brief_intro">
                         Bắt đầu với một đồ án đại học, SpaceCourse đã ra đời với mục đích là mang kiến thức lập trình đến mọi người.
                         <br>
-                        Tuy đồ án chỉ được 7.5 điểm do sự cẩu thả của Team nhưng chúng tôi vẫn đam mê cải thiện dự án không ngừng, hiện dự án này chỉ là một dự án “làm cho vui” nên cũng không có ý định vận hành trang Web này.
+                        Tuy đồ án chỉ được 7.5 điểm do độ khó của cái chủ đề này nhưng chúng tôi vẫn đam mê cải thiện dự án không ngừng, hiện dự án này chỉ là một dự án “làm cho vui” nên cũng không có ý định vận hành trang Web này.
                     </div>
                     <div class="brief_intro">
                         Đọc thêm về dev log của SpaceCourse ở blog (mới biết là phải học thêm php nên tui sẽ làm bằng MVC và hosting cái web blog)
@@ -139,7 +147,7 @@
                 </div>
                 <div class="project" id="quangSite">
                     <div class="project_img_wrapper">
-                        <img src="./src/img/quangSite_Banner.svg">
+                        <img src="./src/img/quangSite_Banner.svg" class="darkmodeinvert">
                     </div>
                     <div class="state">
                         <h1>Loại project: Website Tĩnh</h1>
@@ -151,11 +159,8 @@
                         Là cái trang này :)), như cái tên, trang này là porfolio về tui
                         <br>
                         Cũng có nhiều phiên bản trong quá khứ về cái trang này nhưng mất source rồi. Cái source duy nhất tui tìm được là cái design cũ tui làm trước khi nghĩ ra cái design này (nó phèn lắm)
-                    </div>
-                    <div class="brief_intro">
-                        <h1>Nó đây 🐧</h1>
                         <br>
-                        <img src="./src/img/Web capture_10-1-2023_152146_127.0.0.1.jpeg">
+                        Tui cũng code cái web này hoàn toàn bằng vanilla JavaScript + JQuery và nó là một mớ hỗn loạn. Và có thể tui sẽ chuyển sang ReactJS trong tương lai gần để tiện kết nối cơ sở dữ liệu cho trang Blog.
                     </div>
                     <div class="brief_intro">
                         Lười viết dev log quá (nhưng sẽ có). TUI HỨA
@@ -164,7 +169,7 @@
                 </div>
                 <div class="project" id="quangbot">
                     <div class="project_img_wrapper">
-                        <img src="./src/img/noLogo.svg">
+                        <img src="./src/img/noLogo.svg" class="darkmodeinvert">
                     </div>
                     <div class="state">
                         <h1>Loại project: Làm cho vui</h1>
@@ -176,6 +181,43 @@
                     </div>
                     <div class="brief_intro">
                         Mất source rồi nên ko biết làm blog về nó ntn. Cũng có dự định làm lại em nó nhưng ko biết chừng nào.
+                    </div>
+                </div>
+                <div class="project" id="highlyb">
+                    <div class="project_img_wrapper">
+                        <img src="./src/img/hb_dark.png" class="imgpng">
+                    </div>
+                    <div class="state">
+                        <h1>Loại project: User inteface concept</h1>
+                        <h1>Tình trạng: Discontinued(?)</h1>
+                        <h1>Source: <a style="font-family: 'Inconsolata' !important;" href="">Web (Coming soon)</a></h1>
+                    </div>
+                    <div class="brief_intro">
+                        Lại là một project khác của tôi, lần này chỉ là concept về một cái hệ điều hành lý tưởng do tui thiết kế, có 3 phiên bản rồi, cả cho PC và Mobile.
+                    </div>
+                    <div class="brief_intro">
+                        <h1>Spoil nhẹ xíu</h1>
+                        <br>
+                        <img src="./src/img/Group 254.png">
+                    </div>
+                    <div class="brief_intro">
+                        Web sẽ code sớm thôi
+                    </div>
+                </div>
+                <div class="project" id="socialife">
+                    <div class="project_img_wrapper">
+                        <img src="./src/img/sl_dark.png" class="imgpng">
+                    </div>
+                    <div class="state">
+                        <h1>Loại project: Đồ án cuối kỳ</h1>
+                        <h1>Tình trạng: Work In Progress - 1%</h1>
+                        <h1>Source: <a style="font-family: 'Inconsolata' !important;" href="">Chưa</a></h1>
+                    </div>
+                    <div class="brief_intro">
+                        Đồ án app Mobile của nhóm tui, với chủ đề là mạng xã hội, chủ đề này hơi khó nhưng nếu chúng tui làm được thì sẽ trở thành một dự án khá là chiến và có thể gọi là một dự án tham vọng nhất của chúng tui.
+                    </div>
+                    <div class="brief_intro">
+                        Tiến độ hiện tại: 1% (thiết kế giao diện)
                     </div>
                 </div>
             </div>

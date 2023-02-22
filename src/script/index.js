@@ -77,17 +77,48 @@ function SwitchTo(el, content){
         case "qb":
             $("#quangbot").css("display", "flex")
             break;
+        case "hb":
+            $("#highlyb").css("display", "flex")
+            break;
+        case "sl":
+          $("#socialife").css("display", "flex")
+          break;
     }
 }
+function Darkify(el, reverse){
+  let mode;
+  if(reverse){
+    mode = "dark";
+  } else {
+    mode = "light";
+  }
+  el.each(function() {
+    let link = $(this).prop("src")
+    let choppedoff = []
+    choppedoff = link.split('_')
+    let extension = '.' + choppedoff[1].split('.')[1]
+    let darkfied = choppedoff[0] + '_' + mode + extension
+    console.log(darkfied)
+    console.log(choppedoff)
+    console.log(link)
+    $(this).prop("src", darkfied)
+  })
+}
 function SwitchMode(el){
+    var darkModeReverse = $(".darkmodeinvert")
+    var darkmodepng = $(".imgpng")
     var body = $("body")
     if(el.innerHTML == "light mode"){
+        Darkify(darkmodepng, false)
         body.get(0).style.setProperty("--bg", "white")
         body.get(0).style.setProperty("--txt", "black")
-        body.get(0).style.setProperty("--transparent", "rgba(0, 0, 0, 0.24)")
+        body.get(0).style.setProperty("--transparent", "rgba(0, 0, 0, 0.24)");
+        darkModeReverse.css("filter", "invert(100%)")
         body.get(0).style.setProperty("--less_transparent", "rgba(0, 0, 0, 0.55)")
         el.innerHTML = "dark mode"
     } else {
+      darkModeReverse.css("filter", "invert(0%)")
+      Darkify(darkmodepng, true)
         body.get(0).style.setProperty("--bg", "#373737")
         body.get(0).style.setProperty("--txt", "white")
         body.get(0).style.setProperty("--transparent", "rgba(255, 255, 255, 0.24)")
