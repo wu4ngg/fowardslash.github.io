@@ -1,6 +1,6 @@
 ![quangSite_Banner](https://user-images.githubusercontent.com/68984861/212021281-318a0a44-f46d-4f51-b871-85175c3ce504.svg)
 # quangSite
-Tao fix cứng cỡ chữ đó, đánh nhau ko?
+Tao fix cứng cỡ chữ đó, đánh nhau ko?\
 Hobby project that is a mess
 # Changelog
 ## Ver 0.1
