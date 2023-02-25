@@ -42,6 +42,9 @@ Hobby project that is a mess
 - ![image](https://user-images.githubusercontent.com/68984861/216517031-6b9ed100-1c5f-4fbb-8b99-24f29dd48430.png)
 - ![image](https://user-images.githubusercontent.com/68984861/216517066-eed58963-fd13-4e80-b110-12a44212e352.png)
 - Một vài bug đã đc phát sinh 🙂
+## Ver 1.3.1
+- Thêm project (học kỳ 2 rồi)
+- Cho cái light mode nó bớt đặc cầu
 # To-do list
 1. Trang blog
 2. Trang linh tinh
