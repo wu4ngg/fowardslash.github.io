@@ -8,3 +8,4 @@ Hobby project that is a mess
 3. [ ] Responsive đẹp hơn (bây h nó phèn vãi đái)
 4. [ ] Hosting đàng hoàng
 5. [x] Favicon
+6. [ ] Planning on a REVAMP
