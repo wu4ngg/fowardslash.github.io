@@ -3,9 +3,9 @@
 Tao fix cứng cỡ chữ đó, đánh nhau ko?\
 Hobby project that is a mess
 # To-do list
-1. [ ] Trang blog
-2. [x] Trang linh tinh
-3. [ ] Responsive đẹp hơn (bây h nó phèn vãi đái)
-4. [ ] Hosting đàng hoàng
+1. [ ] Blog page
+2. [x] "Linh tinh" Page
+3. [ ] More polished mobile interface.
+4. [ ] Proper hosting
 5. [x] Favicon
-6. [ ] ~~Planning on a REVAMP~~
+6. [ ] ~~Planning on a REVAMP~~ Canceled. Focusing on Moving to Firebase and doing Blog page.
