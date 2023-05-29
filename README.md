@@ -1,6 +1,6 @@
 ![quangSite_Banner](https://user-images.githubusercontent.com/68984861/212021281-318a0a44-f46d-4f51-b871-85175c3ce504.svg)
 # quangSite
-Web is discontinued. Please visit ![new site](https://fowardslash.vercel.app/)\
+Web is discontinued. Please visit [new site](https://fowardslash.vercel.app/)\
 Hobby project that is a mess
 # To-do list
 1. [ ] Blog page
